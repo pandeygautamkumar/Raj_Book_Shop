@@ -1,0 +1,83 @@
+footer{
+    margin-top: 12vmax;
+    color: #fff;
+    background-color: #df3500;
+    padding: 2vmax;
+    display: flex;
+    font-family: 'Times New Roman', sans-serif;
+}
+.leftFooter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer h3:after{
+  content: '';
+  display: block;
+  clear: both;
+  background-color:white;
+  height: 2.5px;
+  width: 100px;
+  margin: 10px 0 0;
+}
+
+#footer .menu-list{
+  margin: 1.2vmax auto;
+}
+#footer ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#footer .menu-list li{
+  margin: 0.5vmax auto;
+}
+
+#footer .menu-list li a{
+  color: #fff;
+  font-size: 1.3vmax;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+#footer .menu-list li span{
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 0.6px;
+  text-align: left;
+  padding: 0;
+  width: calc(100% - 30px);
+  margin: 0 0 5px;
+}
+
+#footer .menu-list li a:hover{
+  color: black;
+}
+
+.midFooter {
+  width: 65%;
+  text-align: center;
+}
+
+.midFooter > h1 {
+  font-size: 4vmax;
+  font-family: "Times New Roman";
+  color:black;
+}
+.midFooter > p {
+  max-width: 65%;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 1vmax auto;
+}
+
+.rightFooter {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

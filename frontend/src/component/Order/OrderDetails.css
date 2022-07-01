@@ -1,0 +1,109 @@
+.orderDetailsPage {
+  background-color: white;
+}
+
+.orderDetailsContainer > h1 {
+  font: 300 3.3vmax "Times New Roman";
+  margin: 4vmax 0;
+  color: tomato;
+}
+
+.orderDetailsContainer {
+  padding: 5vmax;
+  padding-bottom: 0%;
+}
+
+.orderDetailsContainer > p {
+  font: 400 2.1vmax "Times New Roman";
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+  margin: 2vmax;
+}
+
+.orderDetailsContainerBox > div {
+  display: flex;
+  margin: 1vmax 0;
+}
+
+.orderDetailsContainerBox > div > p {
+  font: 400 1.2vmax "Times New Roman";
+  color: black;
+}
+.orderDetailsContainerBox > div > span {
+  margin: 0 1vmax;
+  font: 100 1.2vmax "Times New Roman";
+  color: #575757;
+}
+
+.orderDetailsCartItems > p {
+  font: 400 2.2vmax "Times New Roman";
+}
+
+.orderDetailsCartItems {
+  padding: 2vmax 5vmax;
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: flex;
+  font: 400 1.3vmax "Times New Roman";
+  align-items: center;
+  margin: 2vmax 0;
+}
+
+.orderDetailsCartItemsContainer > div > img {
+  width: 3vmax;
+}
+
+.orderDetailsCartItemsContainer > div > a {
+  color: #575757;
+  margin: 0 2vmax;
+  width: 60%;
+  text-decoration: none;
+}
+
+.orderDetailsCartItemsContainer > div > span {
+  font: 100 1.3vmax "Times New Roman";
+  color: #5e5e5e;
+}
+
+@media screen and (max-width: 600px) {
+  .orderDetailsContainer > p {
+    font: 400 6.5vw "Times New Roman";
+  }
+
+  .orderDetailsContainerBox > div {
+    margin: 6vw 0;
+  }
+
+  .orderDetailsContainerBox > div > p {
+    font: 400 4.5vw "Times New Roman";
+  }
+  .orderDetailsContainerBox > div > span {
+    font: 100 4.5vw "Times New Roman";
+  }
+
+  .orderDetailsCartItems > p {
+    font: 400 6.5vw "Times New Roman";
+  }
+
+  .orderDetailsCartItemsContainer > div {
+    font: 400 4.5vw "Times New Roman";
+    margin: 4vw 0;
+  }
+
+  .orderDetailsCartItemsContainer > div > img {
+    width: 10vw;
+  }
+
+  .orderDetailsCartItemsContainer > div > a {
+    margin: 2vw;
+    width: 30%;
+  }
+
+  .orderDetailsCartItemsContainer > div > span {
+    font: 100 6vw "Times New Roman";
+  }
+}
