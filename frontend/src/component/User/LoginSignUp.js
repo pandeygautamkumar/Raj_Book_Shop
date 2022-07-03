@@ -7,13 +7,11 @@ import {Link,useNavigate,useLocation} from "react-router-dom";
 import FaceIcon from "@material-ui/icons/Face";
 import {useDispatch,useSelector} from "react-redux";
 import {clearErrors,login,register} from "../../actions/userAction.js";
-import {useAlert} from "react-alert";
 
 const LoginSignUp = () => {
 
   const dispach=useDispatch();
   const location=useLocation();
-  const alert=useAlert();
   const navigate=useNavigate();
 
   const {error,loading,isAuthenticated}=useSelector(state=>state.user);
@@ -72,11 +70,7 @@ const LoginSignUp = () => {
     if(isAuthenticated){
       navigate(redirect);
     }
-    if(error){
-      alert.error(error);
-      dispach(clearErrors());
-    }
-  },[dispach,error,alert,navigate,isAuthenticated,redirect]);
+  },[dispach,error,navigate,isAuthenticated,redirect]);
 
   const switchTabs = (e, tab) => {
     if (tab === "login") {
