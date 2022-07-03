@@ -13,7 +13,7 @@ const ResetPassword = () => {
 
   const dispatch = useDispatch();
   const alert = useAlert();
-  const {keyword}=useParams();
+  const {token}=useParams();
   const navigate=useNavigate();
 
   const { error, success, loading } = useSelector(
@@ -31,7 +31,7 @@ const ResetPassword = () => {
     myForm.set("password", password);
     myForm.set("confirmPassword", confirmPassword);
 
-    dispatch(resetPassword(keyword, myForm));
+    dispatch(resetPassword(token, myForm));
   };
 
   useEffect(() => {

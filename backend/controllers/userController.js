@@ -3,8 +3,8 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const User = require("../models/userModel");
 const sendToken = require("../utils/jwtToken");
 const sendEmail = require("../utils/sendEmail");
+const crypto = require("crypto");
 const cloudinary=require("cloudinary");
-const crypto=require("crypto");
 
 // Register a User
 
@@ -26,6 +26,13 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
       public_id:myCloud.public_id,
       url:myCloud.secure_url,
     },
+  });
+  const message = `Hi,\n\nThanks for signing up to Raj Book Shop,We really appreciate your interest.\n
+                  \n\n if any Query Please Contact, Raj Book Shop`;
+  await sendEmail({
+    email: user.email,
+    subject: `Raj Book Shop Welcome Message: \n`,
+    message,
   });
   sendToken(user, 201, res);
 });
@@ -85,7 +92,8 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
 
   await user.save({ validateBeforeSave: false });
 
-  const resetPasswordUrl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
+  const resetPasswordUrl = 
+  `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
 
   const message = `Your password reset token is :- \n\n ${resetPasswordUrl} \n\n If you have not requested this email then, please ignore it.`;
 
@@ -113,11 +121,12 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
 // Reset Password
 exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
   // creating token hash
-  const resetPasswordToken = crypto
-    .createHash("sha256")
-    .update(req.params.token)
-    .digest("hex");
-
+  const resetPasswordToken =crypto
+                .createHash("sha256")
+                .update(req.params.token)
+                .digest("hex");
+  
+  //IMP Line of Code
   const user = await User.findOne({
     resetPasswordToken,
     resetPasswordExpire: { $gt: Date.now() },

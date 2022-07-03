@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import "./NewProduct.css";
+//import "./NewProduct.css";
 import { useSelector, useDispatch } from "react-redux";
 import {
   clearErrors,
@@ -128,7 +128,7 @@ const UpdateProduct = () => {
 
   return (
     <Fragment>
-      <MetaData title="Admin-Update Product" />
+      <MetaData title="Update Product(Admin)." />
       <div className="dashboard">
         <SideBar />
         <div className="newProductContainer">
@@ -137,7 +137,7 @@ const UpdateProduct = () => {
             encType="multipart/form-data"
             onSubmit={updateProductSubmitHandler}
           >
-            <h1>Update Product</h1>
+            <h1>Update Book</h1>
 
             <div>
               <SpellcheckIcon />
@@ -211,13 +211,13 @@ const UpdateProduct = () => {
             <div id="createProductFormImage">
               {oldImages &&
                 oldImages.map((image, index) => (
-                  <img key={index} src={image.url} alt="Old Product Preview" />
+                  <img key={index} src={image.url} alt="Old Book Preview" />
                 ))}
             </div>
 
             <div id="createProductFormImage">
               {imagesPreview.map((image, index) => (
-                <img key={index} src={image} alt="Product Preview" />
+                <img key={index} src={image} alt="Book Preview" />
               ))}
             </div>
 

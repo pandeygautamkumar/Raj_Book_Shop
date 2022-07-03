@@ -123,7 +123,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
 
     const { data } = await axios.get(`/Book-Shop/order/${id}`);
 
-    dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data.order });
+    dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data.order});
   } catch (error) {
     dispatch({
       type: ORDER_DETAILS_FAIL,

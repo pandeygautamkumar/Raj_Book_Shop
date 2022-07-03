@@ -120,7 +120,7 @@ const OrderList = () => {
 
   return (
     <Fragment>
-      <MetaData title={`All Orders...`} />
+      <MetaData title={`All Orders.`} />
 
       <div className="dashboard">
         <SideBar />

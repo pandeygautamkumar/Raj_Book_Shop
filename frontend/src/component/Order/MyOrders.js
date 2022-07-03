@@ -12,7 +12,6 @@ import LaunchIcon from "@material-ui/icons/Launch";
 
 const MyOrders = () => {
   const dispatch = useDispatch();
-
   const alert = useAlert();
 
   const { loading, error, orders } = useSelector((state) => state.myOrders);
@@ -87,7 +86,7 @@ const MyOrders = () => {
 
   return (
     <Fragment>
-      <MetaData title={`${user.name} - Orders`} />
+      <MetaData title={`${user.name}:Order`} />
 
       {loading ? (
         <Loader />

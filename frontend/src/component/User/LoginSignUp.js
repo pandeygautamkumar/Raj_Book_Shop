@@ -69,12 +69,12 @@ const LoginSignUp = () => {
   const redirect=location.search?location.search.split("=")[1]:"/profile";
   
   useEffect(()=>{
+    if(isAuthenticated){
+      navigate(redirect);
+    }
     if(error){
       alert.error(error);
       dispach(clearErrors());
-    }
-    if(isAuthenticated){
-      navigate(redirect);
     }
   },[dispach,error,alert,navigate,isAuthenticated,redirect]);
 

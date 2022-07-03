@@ -3,16 +3,14 @@ import CheckoutSteps from "./CheckoutSteps";
 import { useSelector } from "react-redux";
 import MetaData from "../layout/MetaData";
 import "./ConfirmOrder.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import { Typography } from "@material-ui/core";
-import {useNavigate} from "react-router-dom";
 
 const ConfirmOrder = () => {
 
   const navigate=useNavigate();
   
   const { shippingInfo, cartItems } = useSelector((state) => state.cart);
-
   const { user } = useSelector((state) => state.user);
 
   const subtotal = cartItems.reduce(
@@ -43,7 +41,7 @@ const ConfirmOrder = () => {
 
   return (
     <Fragment>
-      <MetaData title="Confirm Order....." />
+      <MetaData title="Confirm Order" />
       <CheckoutSteps activeStep={1} />
       <div className="confirmOrderPage">
         <div>
@@ -70,7 +68,7 @@ const ConfirmOrder = () => {
               {cartItems &&
                 cartItems.map((item) => (
                   <div key={item.product}>
-                    <img src={item.image} alt="Product" />
+                    <img src={item.image} alt="Book" />
                     <Link to={`/product/${item.product}`}>
                       {item.name}
                     </Link>{" "}

@@ -125,7 +125,7 @@ export const updatePassword = (passwords) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     const { data } = await axios.put(
-      `/Book-Shop//password/update`,
+      `/Book-Shop/password/update`,
       passwords,
       config
     );
@@ -164,11 +164,7 @@ export const resetPassword = (token, passwords) => async (dispatch) => {
 
     const config = { headers: { "Content-Type": "application/json" } };
 
-    const { data } = await axios.put(
-      `/Book-Shop/password/reset/${token}`,
-      passwords,
-      config
-    );
+    const { data } = await axios.put(`/Book-Shop/password/reset/${token}`,passwords,config);
 
     dispatch({ type: RESET_PASSWORD_SUCCESS, payload: data.success });
   } catch (error) {

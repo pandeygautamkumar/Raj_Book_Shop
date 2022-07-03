@@ -120,7 +120,7 @@ const UsersList = () => {
 
   return (
     <Fragment>
-      <MetaData title={`ALL USERS..`} />
+      <MetaData title={`All User.`} />
 
       <div className="dashboard">
         <SideBar />

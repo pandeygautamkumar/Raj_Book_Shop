@@ -35,7 +35,6 @@ const UpdateUser = () => {
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
 
-//  const userId = match.params.id;
 
   useEffect(() => {
     if (user && user._id !== id) {
@@ -76,7 +75,7 @@ const UpdateUser = () => {
 
   return (
     <Fragment>
-      <MetaData title="Update User.." />
+      <MetaData title="Update User." />
       <div className="dashboard">
         <SideBar />
         <div className="newProductContainer">

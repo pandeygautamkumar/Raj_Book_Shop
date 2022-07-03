@@ -87,7 +87,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <MetaData title="Admin Dashboard..."/>
+      <MetaData title="Admin Dashboard."/>
       <Sidebar />
 
       <div className="dashboardContainer">

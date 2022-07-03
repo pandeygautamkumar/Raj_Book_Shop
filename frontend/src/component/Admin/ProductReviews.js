@@ -130,7 +130,7 @@ const ProductReviews = () => {
 
   return (
     <Fragment>
-      <MetaData title={`ALL REVIEWS..`} />
+      <MetaData title={`ALL REVIEWS.`} />
 
       <div className="dashboard">
         <SideBar />
@@ -145,7 +145,7 @@ const ProductReviews = () => {
               <Star />
               <input
                 type="text"
-                placeholder="Product Id"
+                placeholder="Book Id"
                 required
                 value={productId}
                 onChange={(e) => setProductId(e.target.value)}

@@ -64,6 +64,8 @@ function App() {
     getStripeApiKey();
   }, []);
 
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
+  
   return (
    <Router>
       <Header/>
@@ -77,7 +79,11 @@ function App() {
           <Route exact path="/login" element={<LoginSignUp/>}/>
           <Route exact path="/contact" element={<Contact/>} />
           <Route exact path="/about" element={<About/>} />
-          
+          <Route exact path="/password/forgot" element={<ForgotPassword/>}/>
+          <Route exact path="/password/reset/:token" element={<ResetPassword/>}/>
+          <Route exact path="/cart" element={<Cart/>}/>
+
+
           <Route exact path="/profile" element={<ProtectedRoute><Profile/></ProtectedRoute>}/>
           <Route exact path="/profile/update" element={<ProtectedRoute><UpdateProfile/></ProtectedRoute>}/>
           <Route exact path="/password/update" element={<ProtectedRoute><UpdatePassword/></ProtectedRoute>}/>
@@ -110,14 +116,7 @@ function App() {
             }
           />
 
-          <Route 
-            exact path="/order/:id"
-            element={
-                <ProtectedRoute>
-                  <OrderDetails/>
-                </ProtectedRoute>
-            }
-          />
+          <Route exact path="/order/:id" element={<ProtectedRoute><OrderDetails/></ProtectedRoute>}/>
 
           <Route 
             exact path="/admin/dashboard"
@@ -196,10 +195,6 @@ function App() {
                 </ProtectedRoute>
             }
           />
-                    
-          <Route exact path="/password/forgot" element={<ForgotPassword/>}/>
-          <Route exact path="/password/reset/:token" element={<ResetPassword/>}/>
-          <Route exact path="/cart" element={<Cart/>}/>
 
           <Route exact path="/*" element={<NotFound/>}/>
       </Routes>

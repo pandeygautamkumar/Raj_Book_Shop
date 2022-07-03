@@ -95,7 +95,6 @@ exports.getProductDetails=catchAsyncErrors(async (req, res, next) => {
 exports.updateProduct = catchAsyncErrors(async (req, res, next) => {
 
   let product = await Product.findById(req.params.id);
-
   if (!product) {
     return next(new ErrorHander("Product not found", 404));
   }
