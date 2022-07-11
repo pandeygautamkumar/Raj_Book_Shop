@@ -18,7 +18,7 @@
   .shippingHeading {
     text-align: center;
     color: rgba(7, 7, 7, 0.664);
-    font: 400 1.6vmax "Times New Roman";
+    font: 400 1.7vmax "Times New Roman";
     padding: 1.3vmax;
     border-bottom: 1px solid rgba(0, 0, 0, 0.205);
     width: 50%;
@@ -65,7 +65,7 @@
     border: none;
     background-color:tomato;
     color: white;
-    font: 300 1.3vmax "Times New Roman";
+    font: 300 1.4vmax "Times New Roman";
     width: 100%;
     padding: 1vmax;
     cursor: pointer;
@@ -85,7 +85,7 @@
     }
   
     .shippingHeading {
-      font: 400 8vw "Times New Roman";
+      font: 400 6vw "Times New Roman";
       padding: 5vw;
     }
   
@@ -96,7 +96,7 @@
     .shippingForm > div > input,
     .shippingForm > div > select {
       padding: 5vw 10vw;
-      font: 300 6vw serif;
+      font: 300 4vw serif;
     }
   
     .shippingForm > div > svg {

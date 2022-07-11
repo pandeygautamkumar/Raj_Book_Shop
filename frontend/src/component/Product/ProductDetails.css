@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2vmax;
-  padding-top: 5vmax;
   box-sizing: border-box;
   border: 1px solid rgb(244, 242, 242);
 }

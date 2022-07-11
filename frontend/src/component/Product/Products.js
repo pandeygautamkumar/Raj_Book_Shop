@@ -59,7 +59,7 @@ const Products = () => {
     <Fragment>
         { loading ? <Loader/>:
             <Fragment>
-                <MetaData title="All Book...." />
+                <MetaData title="All Book" />
           <h2 className="productsHeading">All Books</h2>
 
           <div className="products">

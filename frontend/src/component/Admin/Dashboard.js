@@ -91,7 +91,7 @@ const Dashboard = () => {
       <Sidebar />
 
       <div className="dashboardContainer">
-        <Typography component="h1">Dashboard</Typography>
+        <Typography component="h1">RAJ BOOK SHOP</Typography>
 
         <div className="dashboardSummary">
           <div>
@@ -101,7 +101,7 @@ const Dashboard = () => {
           </div>
           <div className="dashboardSummaryBox2">
             <Link to="/admin/products">
-              <p>Product</p>
+              <p>Books</p>
               <p>{products && products.length}</p>
             </Link>
             <Link to="/admin/orders">

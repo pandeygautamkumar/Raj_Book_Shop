@@ -1,18 +1,15 @@
 footer{
     margin-top: 12vmax;
-    color: #fff;
     background-color: #df3500;
     padding: 2vmax;
+    align-content: center;
     display: flex;
-    font-family: 'Times New Roman', sans-serif;
+    align-items: center;
 }
-.leftFooter {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#footer h3{
+  font-size: 1.6vmax;
+  font-family: "Times New Roman";
 }
-
 #footer h3:after{
   content: '';
   display: block;
@@ -22,10 +19,6 @@ footer{
   width: 100px;
   margin: 10px 0 0;
 }
-
-#footer .menu-list{
-  margin: 1.2vmax auto;
-}
 #footer ul{
   padding: 0;
   margin: 0;
@@ -33,51 +26,63 @@ footer{
 }
 #footer .menu-list li{
   margin: 0.5vmax auto;
+  font-size: 1.5vmax;
+  font-family: "Times New Roman";
+  color: white;
 }
-
 #footer .menu-list li a{
   color: #fff;
-  font-size: 1.3vmax;
-  letter-spacing: 0.6px;
+  font-size: 1.5vmax;
+  letter-spacing: 0.5px;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s;
-}
-
-#footer .menu-list li span{
-  display: inline-block;
-  text-transform: capitalize;
-  letter-spacing: 0.6px;
-  text-align: left;
-  padding: 0;
-  width: calc(100% - 30px);
-  margin: 0 0 5px;
+  font-family: "Times New Roman";
 }
 
 #footer .menu-list li a:hover{
   color: black;
 }
-
+.leftFooter {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .midFooter {
-  width: 65%;
+  width: 60%;
   text-align: center;
 }
-
 .midFooter > h1 {
-  font-size: 4vmax;
+  font-size: 3vmax;
   font-family: "Times New Roman";
   color:black;
 }
 .midFooter > p {
-  max-width: 65%;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 1vmax auto;
+  font-size: 1.7vmax;
+  font-family: "Times New Roman";
+  margin: 1.5vmax auto;
+  color: white;
 }
-
 .rightFooter {
   width: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  footer{
+      flex-direction: column;
+  }
+  .leftFooter {
+    text-align: center;
+  }
+  .midFooter {
+    width: 60%;
+    text-align: center;
+  }
+  .rightFooter {
+    text-align: center;
+  }
 }
 

@@ -10,13 +10,13 @@
 
 .mailBtn {
   text-decoration: none;
- 
+  transform: translateX(-100vw);
   animation: mailBtnAnimation 2s forwards;
 }
 
 .mailBtn > button {
   text-decoration: none;
-  font: 200 2.2vmax "Times New Roman";
+  font: 200 2.4vmax "Times New Roman";
   padding: 2vmax;
 }
 

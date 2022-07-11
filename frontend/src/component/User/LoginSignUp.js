@@ -6,7 +6,7 @@ import LockOpenIcon from "@material-ui/icons/LockOpen";
 import {Link,useNavigate,useLocation} from "react-router-dom";
 import FaceIcon from "@material-ui/icons/Face";
 import {useDispatch,useSelector} from "react-redux";
-import {clearErrors,login,register} from "../../actions/userAction.js";
+import {login,register} from "../../actions/userAction.js";
 
 const LoginSignUp = () => {
 

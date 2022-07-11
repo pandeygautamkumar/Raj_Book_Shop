@@ -35,7 +35,7 @@
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.267);
     border-radius: 4px;
-    font: 300 1.4vmax serif;
+    font: 300 1.3vmax serif;
     outline: none;
   }
   
@@ -53,7 +53,7 @@
     }
     .productReviewsForm > div > input {
       padding: 2.5vmax 5vmax;
-      font: 300 2.5vmax serif;
+      font: 300 2.1vmax serif;
     }
   
     .productReviewsForm > div > svg {

@@ -19,7 +19,7 @@ const Search = () => {
 
   return (
     <Fragment>
-      <MetaData title="Search Any Book...." />
+      <MetaData title="Search Any Book" />
       <form className="searchBox" onSubmit={searchSubmitHandler}>
         <input
           type="text"

@@ -10,7 +10,8 @@ const Footer = () => {
       <div className="leftFooter">
         <h3>Contact Us</h3>
             <ul class="menu-list">
-                <li><AiFillHome/><spam>: Near Chandani Chauk,Mohania(Kaimur),821109</spam></li>
+                <li><AiFillHome/><spam>: Near Chandani Chauk</spam></li>
+                <li><AiFillHome/><spam>: Mohania(Kaimur),821109</spam></li>
                 <li><BsFillTelephoneFill/><spam>: 9523527143</spam></li>
                 <li><MdEmail/><spam>: pandeygauta789@gmail.com</spam></li>
             </ul>

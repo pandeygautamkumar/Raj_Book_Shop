@@ -14,7 +14,7 @@
 
 #myOrdersHeading {
   text-align: center;
-  font: 400 1.5vmax "Times New Roman";
+  font: 400 1.6vmax "Times New Roman";
   padding: 0.5vmax;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
@@ -27,7 +27,7 @@
 }
 
 .myOrdersTable div {
-  font: 300 1vmax "Roboto";
+  font: 300 1.4vmax "Times New Roman";
   color: rgba(0, 0, 0, 0.678);
   border: none;
 }
@@ -48,7 +48,7 @@
 
 .MuiDataGrid-columnHeader div {
   color: rgb(255, 255, 255);
-  font: 500 1.4vmax "Times New Roman" !important;
+  font: 500 1.5vmax "Times New Roman" !important;
 }
 
 .MuiDataGrid-iconSeparator {
@@ -67,7 +67,7 @@
   }
 
   .myOrdersTable div {
-    font: 300 4.4vw "Times New Roman";
+    font: 300 4vw "Times New Roman";
   }
 
   .MuiDataGrid-columnHeader {
@@ -75,6 +75,6 @@
   }
 
   .MuiDataGrid-columnHeader div {
-    font: 500 5.3vw "Times New Roman" !important;
+    font: 500 5vw "Times New Roman" !important;
   }
 }

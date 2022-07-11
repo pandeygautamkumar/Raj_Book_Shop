@@ -7,7 +7,6 @@ import PersonIcon from "@material-ui/icons/Person";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-//import Dashboard from '@material-ui/icons/Dashboard';
 import {useNavigate} from "react-router-dom";
 import { useAlert } from 'react-alert';
 import {logout} from "../../../actions/userAction.js";

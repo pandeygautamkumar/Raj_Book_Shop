@@ -40,7 +40,7 @@
     box-sizing: border-box;
     border: 1px solid rgba(59, 58, 58, 0.722);
     border-radius: 4px;
-    font: 300 1.2vmax serif;
+    font: 300 0.9vmax serif;
     outline: none;
   }
   
@@ -113,7 +113,7 @@
     .createProductForm > div > select,
     .createProductForm > div > textarea {
       padding: 2.5vmax 5vmax;
-      font: 300 2.2vmax serif;
+      font: 300 2.1vmax serif;
     }
   
     .createProductForm > div > svg {

@@ -33,7 +33,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
 });
 
-// Middleware for Errors
+//Middleware for Errors
 app.use(errorMiddleware);
 
 

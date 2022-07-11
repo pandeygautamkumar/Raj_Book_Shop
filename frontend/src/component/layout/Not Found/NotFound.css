@@ -21,7 +21,7 @@
   border: none;
   padding: 1vmax 3vmax;
   cursor: pointer;
-  font: 400 1.3vmax "Times New Roman";
+  font: 400 1.4vmax "Times New Roman";
   text-decoration: none;
   margin: 2vmax;
 }
@@ -29,7 +29,7 @@
 @media screen and (max-width: 600px) {
   .PageNotFound > a {
     padding: 3vw 6vw;
-    font: 400 5vw "Times New Roman";
+    font: 400 4.4vw "Times New Roman";
     margin: 2vmax;
   }
 

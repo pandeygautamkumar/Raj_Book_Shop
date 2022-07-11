@@ -70,7 +70,7 @@
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.267);
   border-radius: 4px;
-  font: 300 1.2vmax serif;
+  font: 300 1.3vmax serif;
   outline: none;
 }
 
@@ -86,7 +86,7 @@
   text-decoration: none;
   align-self: flex-end;
   transition: all 0.5s;
-  font: 500 1.3vmax "Times New Roman";
+  font: 500 1.2vmax "Times New Roman";
 }
 .loginForm > a:hover {
   color: black;
@@ -107,7 +107,7 @@
   height: 5vh;
   border: none;
   margin: 0%;
-  font: 400 1vmax cursive;
+  font: 400 1.2vmax serif;
   transition: all 0.5s;
   padding: 0 1vmax;
   color: rgba(0, 0, 0, 0.623);
@@ -167,7 +167,7 @@
     height: 5vmax;
   }
   .login_signUp_toggle > p {
-    font: 300 2vmax "Times New Roman";
+    font: 300 1.9vmax "Times New Roman";
   }
 
   .loginForm,
@@ -177,8 +177,8 @@
 
   .loginForm > div > input,
   .signUpForm > div > input {
-    padding: 2.8vmax 5vmax;
-    font: 300 2.4vmax serif;
+    padding: 2.5vmax 5vmax;
+    font: 300 2.1vmax serif;
   }
 
   .loginForm > div > svg,
@@ -187,7 +187,7 @@
   }
 
   .loginForm > a {
-    font: 500 2.5vmax "Times New Roman";
+    font: 500 2.2vmax "Times New Roman";
   }
 
   #registerImage > img {
@@ -197,12 +197,12 @@
 
   #registerImage > input::file-selector-button {
     height: 7vh;
-    font: 400 2.4vmax cursive;
+    font: 400 2.2vmax serif;
   }
 
   .loginBtn,
   .signUpBtn {
-    font: 300 2.5vmax "Times New Roman";
+    font: 300 2.3vmax "Times New Roman";
     padding: 2vmax;
   }
 }

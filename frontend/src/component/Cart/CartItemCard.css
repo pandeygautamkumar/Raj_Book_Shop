@@ -1,4 +1,4 @@
-.CartItemCard {
+CartItemCard {
   display: flex;
   padding: 1vmax;
   height: 8vmax;
@@ -16,19 +16,19 @@
 }
 
 .CartItemCard > div > a {
-  font: 300 1.2vmax serif;
+  font: 300 1.3vmax serif;
   color: rgba(24, 24, 24, 0.815);
   text-decoration: none;
 }
 
 .CartItemCard > div > span {
-  font: 300 1.2vmax "Times New Roman";
+  font: 300 1.3vmax "Times New Roman";
   color: rgba(24, 24, 24, 0.815);
 }
 
 .CartItemCard > div > p {
   color: tomato;
-  font: 100 1vmax "Times New Roman";
+  font: 100 1.2vmax "Times New Roman";
   cursor: pointer;
 }
 
@@ -46,14 +46,14 @@
   }
 
   .CartItemCard > div > a {
-    font: 300 2.5vmax serif;
+    font: 300 2.4vmax serif;
   }
 
   .CartItemCard > div > span {
-    font: 300 2.5vmax "Times New Roman";
+    font: 300 2.3vmax "Times New Roman";
   }
 
   .CartItemCard > div > p {
-    font: 100 2.4vmax "Times New Roman";
+    font: 100 2.2vmax "Times New Roman";
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .orderDetailsContainer > h1 {
-  font: 300 3.3vmax "Times New Roman";
+  font: 300 3.4vmax "Times New Roman";
   margin: 4vmax 0;
   color: tomato;
 }
@@ -14,7 +14,7 @@
 }
 
 .orderDetailsContainer > p {
-  font: 400 2.1vmax "Times New Roman";
+  font: 400 2.2vmax "Times New Roman";
 }
 
 .orderDetailsContainerBox,
@@ -28,12 +28,12 @@
 }
 
 .orderDetailsContainerBox > div > p {
-  font: 400 1.2vmax "Times New Roman";
+  font: 400 1.4vmax "Times New Roman";
   color: black;
 }
 .orderDetailsContainerBox > div > span {
   margin: 0 1vmax;
-  font: 100 1.2vmax "Times New Roman";
+  font: 100 1.4vmax "Times New Roman";
   color: #575757;
 }
 
@@ -48,7 +48,7 @@
 
 .orderDetailsCartItemsContainer > div {
   display: flex;
-  font: 400 1.3vmax "Times New Roman";
+  font: 400 1.4vmax "Times New Roman";
   align-items: center;
   margin: 2vmax 0;
 }
@@ -65,13 +65,13 @@
 }
 
 .orderDetailsCartItemsContainer > div > span {
-  font: 100 1.3vmax "Times New Roman";
+  font: 100 1.4vmax "Times New Roman";
   color: #5e5e5e;
 }
 
 @media screen and (max-width: 600px) {
   .orderDetailsContainer > p {
-    font: 400 6.5vw "Times New Roman";
+    font: 400 6vw "Times New Roman";
   }
 
   .orderDetailsContainerBox > div {
@@ -79,18 +79,18 @@
   }
 
   .orderDetailsContainerBox > div > p {
-    font: 400 4.5vw "Times New Roman";
+    font: 400 4vw "Times New Roman";
   }
   .orderDetailsContainerBox > div > span {
-    font: 100 4.5vw "Times New Roman";
+    font: 100 4vw "Times New Roman";
   }
 
   .orderDetailsCartItems > p {
-    font: 400 6.5vw "Times New Roman";
+    font: 400 6vw "Times New Roman";
   }
 
   .orderDetailsCartItemsContainer > div {
-    font: 400 4.5vw "Times New Roman";
+    font: 400 4vw "Times New Roman";
     margin: 4vw 0;
   }
 
@@ -104,6 +104,6 @@
   }
 
   .orderDetailsCartItemsContainer > div > span {
-    font: 100 6vw "Times New Roman";
+    font: 100 4vw "Times New Roman";
   }
 }

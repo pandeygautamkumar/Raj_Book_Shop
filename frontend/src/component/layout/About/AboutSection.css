@@ -32,7 +32,7 @@
 }
 
 .aboutSectionContainer > h1 {
-  font: 400 3.3vmax "Times New Roman";
+  font: 400 3.4vmax "Times New Roman";
   color: tomato;
   margin: 2vmax;
 }
@@ -73,7 +73,7 @@
 
 .aboutSectionContainer2 > h2 {
   color: rgba(0, 0, 0, 0.623);
-  font: 100 2.3vmax "Times New Roman";
+  font: 100 2.4vmax "Times New Roman";
   margin: 2vmax;
 }
 
@@ -95,16 +95,16 @@
   }
 
   .aboutSectionContainer > h1 {
-    font: 400 6vmax "Times New Roman";
+    font: 400 5.4vmax "Times New Roman";
     margin: 3vmax;
   }
 
   .aboutSectionContainer > div > div > p {
-    font: 100 3vmax "Times New Roman";
+    font: 100 2.4vmax "Times New Roman";
   }
 
   .aboutSectionContainer > div > div > span {
-    font: 100 2.4vmax "Times New Roman";
+    font: 100 1.8vmax "Times New Roman";
     width: 70%;
   }
 
@@ -113,12 +113,12 @@
   }
 
   .aboutSectionContainer2 > h2 {
-    font: 100 4vmax "Times New Roman";
+    font: 100 3.4vmax "Times New Roman";
     margin: 2vmax;
   }
 
   .aboutSectionContainer2 > a > svg {
-    font-size: 6vmax;
+    font-size: 6.4vmax;
     margin: 1vmax;
   }
 }

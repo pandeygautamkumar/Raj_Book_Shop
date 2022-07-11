@@ -38,7 +38,7 @@ const Home = () => {
                 </button>
             </a>
         </div>
-        <h2 className="homeHeading" id="homeHeading">Our Important Books</h2>
+        <h2 className="homeHeading" id="homeHeading">Some Important Books</h2>
         <div className="container">
         {products &&
               products.map((product) => 
