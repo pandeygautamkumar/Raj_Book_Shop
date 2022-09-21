@@ -26,7 +26,6 @@ app.use("/Book-Shop", user);
 app.use("/Book-Shop", order);
 app.use("/Book-Shop", payment);
 
-
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("*", (req, res) => {
