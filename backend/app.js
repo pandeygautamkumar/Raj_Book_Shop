@@ -26,11 +26,11 @@ app.use("/Book-Shop", user);
 app.use("/Book-Shop", order);
 app.use("/Book-Shop", payment);
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+//app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
+//app.get("*", (req, res) => {
+//  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+//});
 
 //Middleware for Errors
 app.use(errorMiddleware);
